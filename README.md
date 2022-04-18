@@ -23,6 +23,7 @@ In a function, you can define *args and **kwargs as arguments (args and kwargs c
     sample_function('first','second',3,forth='This is the forth',fifth='Not the forth')
 
 Will Output: 
+
     ('first', 'second', 3)
     {'forth': 'This is the forth', 'fifth': 'Not the forth'}
     3
