@@ -19,7 +19,7 @@ In a function, you can define *args and **kwargs as arguments (args and kwargs c
     positional_arguments = ['first', 'second', 3]
     keyword_arguments = {'forth': 'This is the forth', 'fifth': 'Not the forth'}
 
-    sample_function(positional_arguments,keyword_arguments)
+    sample_function(*positional_arguments,**keyword_arguments)
     sample_function('first','second',3,forth='This is the forth',fifth='Not the forth')
 
 Will Output: 
