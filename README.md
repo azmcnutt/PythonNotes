@@ -33,3 +33,17 @@ Will Output:
     3
     Not the forth
 
+## CSV Writer:
+
+[X] is the delimiter, such as ',', or '\t' (for tab)
+data is a list of values in a list, like:
+
+    data = [
+        ['first', 'last', 'email'],
+        ['john', 'smith', 'johnsmith@somedomain.com']',
+        etc.
+    ]
+    with open('new_data.cwsv', 'w') as new_csv:
+        csv_writer = csv.writer(new_csv, '[X]'
+        for line in data:
+            csv_writer.writerow(line)
