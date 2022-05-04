@@ -122,6 +122,20 @@ from: Cory Schafer's Python Tutorial: Unit Testing You Code wityh unittest modul
         with patch('module.request.get') as mocked_get:
             mocked_get.return_value.ok=true
             mocked_get.return_value.text = "success'
+
+## Default Values of Functions
+
+If a variable for a function has a mutable data type default, the default value is computed when the function is interpreted by the compiler, now each time the function is run. for instance:
+
+    def show_time(time=datetime.now()):
+        print(time.strftime('%B %d, %Y %H:%M:%S'))
+    show_time()
+    time.sleep(10)
+    show_time()
+ 
+ When executed this code will print the same time for both show_time calls, even though there is a ten second sleep.
+ 
+ 
             
 
 # Credits
