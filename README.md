@@ -135,7 +135,27 @@ If a variable for a function has a mutable data type default, the default value 
  
  When executed this code will print the same time for both show_time calls, even though there is a ten second sleep.
  
- 
+ ## Creating a list of an iteratable
+ Normal way
+    
+    nums = [1,2,3,4,5,6,7,8,9]
+    nylist = []
+    for n in nums:
+        mylist.append(n)
+    print(mylist)
+
+Easier way
+    
+    nums = [1,2,3,4,5,6,7,8,9]
+    mylist = [n for n in nums]
+    print (mylist)
+
+Using with a single line if
+
+    nums = [1,2,3,4,5,6,7,8,9]
+    mylist = [n for n in nums if n%2 == 0]
+    print(mylist)
+
             
 
 # Credits
