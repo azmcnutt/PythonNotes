@@ -81,3 +81,16 @@ Copy pipfile.lock to production environment, t hen run:
 ### Linux
 
   python3 -m venv /path/to/new/virtual/environment
+
+## Data Export/Import
+### DataDump
+~~~
+dumpdata --natural-foreign --natural-primary -o OUTPUT
+~~~
+~~~
+dumpdata --natural-foreign --natural-primary -o bcsd_jobs.json
+~~~
+### LoadData
+~~~
+loadata
+~~~
