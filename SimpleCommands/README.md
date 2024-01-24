@@ -10,7 +10,7 @@
 
   pip install --upgrade pip
 
-## PIPENV - possibly bettern than pip with venv
+## PIPENV - possibly better than pip with venv
 pipfile = settings for pipenv, like which packages to install, where to download, and Python version.
 pipfile.lock = Contains more info about what is installed, but should not be changed. 
 
